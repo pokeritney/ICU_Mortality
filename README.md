@@ -3,7 +3,7 @@
 
 ---
 
-<h1 id="bdhteam48project"># BDHteam48project</h1>
+<h1 id="bdhteam48project">BDHteam48project</h1>
 <h1 id="files">Files</h1>
 <ul>
 <li>
@@ -90,5 +90,5 @@
 </tr>
 </tbody>
 </table><h3 id="data-files">Data Files</h3>
-<p>All the pre-processed data files are exported into csv format and saved under Data/Output folder.</p>
+<p>All the pre-processed data files are exported into csv format and saved under Data/Output.zip. Since GitHub does not allow file upload more than 100MB, please unzip if necessary.</p>
 
