@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="bdhteam48project">BDHteam48project</h1>
 <p>Hi! The repository contains all the steps and code to reproduce team 48’s ICU mortality prediction project.</p>
 <h2 id="data-pre-processing">Data Pre-Processing</h2>
