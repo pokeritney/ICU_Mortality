@@ -73,7 +73,8 @@
 <h3 id="data-files">Data Files</h3>
 <p>All the pre-processed data files are exported into csv format and saved under Data/Output.zip. Since GitHub does not allow file upload more than 100MB, please unzip if necessary.</p>
 <h2 id="model-training-and-prediction">Model Training and Prediction</h2>
-<p><strong>All files related to data pre-processing are under /Model folder.</strong></p>
+<p><strong>All files related to model training and predictions are under /Model folder.</strong></p>
+<h3 id="notebooks">Notebooks</h3>
 <ul>
 <li>
 <p>LSTM</p>
