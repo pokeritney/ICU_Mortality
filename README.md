@@ -4,34 +4,9 @@
 ---
 
 <h1 id="bdhteam48project">BDHteam48project</h1>
-<h1 id="files">Files</h1>
-<ul>
-<li>
-<p>The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.</p>
-<blockquote>
-<p>To start syncing your workspace, just sign in with Google in the menu.</p>
-</blockquote>
-</li>
-<li>
-<p>The file synchronization will keep one file of the workspace synced with one or multiple files in <strong>Google Drive</strong>, <strong>Dropbox</strong> or <strong>GitHub</strong>.</p>
-<blockquote>
-<p>Before starting to sync files, you must link an account in the <strong>Synchronize</strong> sub-menu.</p>
-</blockquote>
-</li>
-</ul>
-<h1 id="publication">Publication</h1>
-<p>Publishing in StackEdit makes it simple for you to publish online your files. Once you’re happy with a file, you can publish it to different hosting platforms like <strong>Blogger</strong>, <strong>Dropbox</strong>, <strong>Gist</strong>, <strong>GitHub</strong>, <strong>Google Drive</strong>, <strong>WordPress</strong> and <strong>Zendesk</strong>. With <a href="http://handlebarsjs.com/">Handlebars templates</a>, you have full control over what you export.</p>
-<blockquote>
-<p>Before starting to publish, you must link an account in the <strong>Publish</strong> sub-menu.</p>
-</blockquote>
-<h2 id="publish-a-file">Publish a File</h2>
-<p>You can publish your file by opening the <strong>Publish</strong> sub-menu and by clicking <strong>Publish to</strong>. For some locations, you can choose between the following formats:</p>
-<ul>
-<li>Markdown: publish the Markdown text on a website that can interpret it (<strong>GitHub</strong> for instance),</li>
-<li>HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).</li>
-</ul>
+<p>Hi! The repository contains all the steps and code to reproduce team 48’s ICU mortality prediction project.</p>
 <h2 id="data-pre-processing">Data Pre-Processing</h2>
-<p><strong>All files related to data pre-processing are under Data folder.</strong></p>
+<p><strong>All files related to data pre-processing are under /Data folder.</strong></p>
 <p>The initial exploratory data analysis are saved under Data/EDA.ipynb.</p>
 <h3 id="queries---bigquery">Queries - BigQuery</h3>
 <p>Below describes the purpose of each query of extracting our features. The feature engineering process was inspired by <a href="https://github.com/alistairewj/mortality-prediction/tree/master/queries">Alistair Johnson</a> 's morality prediction project. We used some of his queries for reference when building our own features. The data was extracted for 6hrs, 12hrs, 24hrs and 48hrs during a patient’s ICU stay.</p>
@@ -40,7 +15,7 @@
 <thead>
 <tr>
 <th>Queries</th>
-<th>Description</th>
+<th>Purpose</th>
 </tr>
 </thead>
 <tbody>
@@ -89,8 +64,28 @@
 <td>extracts the cohort and every possible hour they were in the ICU</td>
 </tr>
 </tbody>
-</table><p>All queries are processed on Google BigQuery with MIMIC-III integrated cloud database. Here are the interface:</p>
+</table><h4 id="google-bigquery">Google BigQuery</h4>
+<p>All queries are processed on Google BigQuery with <a href="https://mimic.physionet.org/tutorials/intro-to-mimic-iii-bq/">MIMIC-III integrated cloud database</a>. Here are the interface:</p>
+<blockquote>
+<p>The mimiciii dataset can be directly called as shown on the left hand side.</p>
+</blockquote>
 <p><img src="bigquery.png" alt="BQ"></p>
 <h3 id="data-files">Data Files</h3>
 <p>All the pre-processed data files are exported into csv format and saved under Data/Output.zip. Since GitHub does not allow file upload more than 100MB, please unzip if necessary.</p>
+<h2 id="model-training-and-prediction">Model Training and Prediction</h2>
+<p><strong>All files related to data pre-processing are under /Model folder.</strong></p>
+<ul>
+<li>
+<p>LSTM</p>
+</li>
+<li>
+<p><strong>Random_Forest_PySpark.ipynb</strong>: Contains all the steps to train the random forest model in PySpark.</p>
+</li>
+<li>
+<p><strong>GradientBoostingTree_PySpark.ipynb</strong>: Contains all the steps to train the gradient boosting tree model in PySpark.</p>
+</li>
+</ul>
+<h3 id="pyspark-on-google-colab">PySpark on Google Colab</h3>
+<p>Our models are trained with <a href="https://colab.research.google.com/github/asifahmed90/pyspark-ML-in-Colab/blob/master/PySpark_Regression_Analysis.ipynb">PySpark on Google Colab</a>. Google Colab is built on top of Jupyter Notebook, so their interfaces are very similar:</p>
+<p><img src="colab.png" alt="Colab"></p>
 
