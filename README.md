@@ -1,3 +1,8 @@
+---
+
+
+---
+
 <h1 id="bdhteam48project">BDHteam48project</h1>
 <p>Hi! The repository contains all the steps and code to reproduce team 48’s ICU mortality prediction project.</p>
 <h2 id="data-pre-processing">Data Pre-Processing</h2>
@@ -72,7 +77,7 @@
 <h3 id="notebooks">Notebooks</h3>
 <ul>
 <li>
-<p>LSTM</p>
+<p><strong>LSTM_on_PySpark.ipynb</strong>: Contains all the steps to train the LSTM model in PySpark and Tensorflow.</p>
 </li>
 <li>
 <p><strong>Random_Forest_PySpark.ipynb</strong>: Contains all the steps to train the random forest model in PySpark.</p>
