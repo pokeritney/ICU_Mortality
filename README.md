@@ -89,6 +89,8 @@
 <td>extracts the cohort and every possible hour they were in the ICU</td>
 </tr>
 </tbody>
-</table><h3 id="data-files">Data Files</h3>
+</table><p>All queries are processed on Google BigQuery with MIMIC-III integrated cloud database. Here are the interface:</p>
+<p>![BQ](big query.png)</p>
+<h3 id="data-files">Data Files</h3>
 <p>All the pre-processed data files are exported into csv format and saved under Data/Output.zip. Since GitHub does not allow file upload more than 100MB, please unzip if necessary.</p>
 
