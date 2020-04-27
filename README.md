@@ -89,7 +89,9 @@
 <td>extracts the cohort and every possible hour they were in the ICU</td>
 </tr>
 </tbody>
-</table><p>All queries are processed on Google BigQuery with MIMIC-III integrated cloud database. Here are the interface:</p>
+</table><h5 id="google-bigquery">Google BigQuery</h5>
+<p>All queries are processed on Google BigQuery with <a href="https://mimic.physionet.org/tutorials/intro-to-mimic-iii-bq/">MIMIC-III integrated cloud database</a>. Here are the interface:</p>
+<p>The mimiciii dataset can be directly called as shown on the left hand side.</p>
 <p><img src="bigquery.png" alt="BQ"></p>
 <h3 id="data-files">Data Files</h3>
 <p>All the pre-processed data files are exported into csv format and saved under Data/Output.zip. Since GitHub does not allow file upload more than 100MB, please unzip if necessary.</p>
