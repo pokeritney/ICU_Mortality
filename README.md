@@ -1,5 +1,5 @@
-<h1 id="bdhteam48project">BDHteam48project</h1>
-<p>Hi! The repository contains all the steps and code to reproduce team 48’s ICU mortality prediction project.</p>
+<h1 id="bdhteam48project">ICU Prediction</h1>
+
 <h2 id="data-pre-processing">Data Pre-Processing</h2>
 <p><strong>All files related to data pre-processing are under /Data folder.</strong></p>
 <p>The initial exploratory data analysis are saved under Data/EDA.ipynb.</p>
